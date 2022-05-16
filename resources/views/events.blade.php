@@ -20,7 +20,7 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="single-event-area mb-30">
                             <div class="event-thumbnail">
-                                <img src="{{ $event->image }}" alt="">
+                                <img src="{{ $event->image_url }}" alt="">
                             </div>
                             <div class="event-text">
                                 <h4>{{ $event->name }}</h4>

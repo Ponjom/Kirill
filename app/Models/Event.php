@@ -15,8 +15,8 @@ class Event extends Model
         'image',
     ];
 
-    public function getImageUrlAttribute($image)
+    public function getImageUrlAttribute()
     {
-        return 'storage/' . $image;
+        return 'storage/' . $this->image;
     }
 }
