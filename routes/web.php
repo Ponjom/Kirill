@@ -41,6 +41,7 @@ Route::middleware(['guest'])->group(function () {
 Route::middleware(['auth'])->group(function () {
     Route::get('/track/{track}/like', [TracksController::class, 'like'])->name('track.like');
     Route::get('/profile', [UserController::class, 'show'])->name('profile');
+    Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
     Route::middleware(['admin'])->group(function () {
         Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
 

@@ -66,7 +66,7 @@
                                     @if(auth()->user()->isAdmin)
                                         <li><a href="{{ route('admin.index') }}">Админ-панель</a></li>
                                     @endif
-                                        <li><a href="blog.html">Выйти</a></li>
+                                        <li><a href="{{ route('logout') }}">Выйти</a></li>
                                 @endauth
                             </ul>
 
